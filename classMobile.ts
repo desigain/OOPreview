@@ -107,10 +107,10 @@ class Mobile
         return this.price;
     }
 
-    public printProperities () //Método que imprime todas las características del objeto en modo lista
+    public printProperities ()//Método que imprime todas las características del objeto en modo lista
     {
         console.log("• 'The characteristics of the mobile " + this.name + " are:'" + "\n" + "\t■ Name: " + this.name + "\n" + "\t■ Model: " + this.model + "\n" 
         + "\t■ Trademark: " + this.trademark + "\n" + "\t■ SD Size (GB): " + this.sdSize + "\n" + "\t■ Color: " + this.color + "\n" + "\t■ Is 5g?: " + this.is5G + "\n" 
-        + "\t■ Number of Cameras: " + this.cameraNumber + "\n" + "\t■ Price: " + this.price);
+        + "\t■ Number of Cameras: " + this.cameraNumber + "\n" + "\t■ Price: " + this.price + "\n");
     } 
 }
