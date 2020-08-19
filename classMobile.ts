@@ -109,9 +109,8 @@ class Mobile
 
     public printProperities () //Método que imprime todas las características del objeto en modo lista
     {
-        console.log("* 'The characteristics of the mobile " + this.name + " are:'" + "\n" + "     -Name: " + this.name + "\n" + "     -Model: " + this.model + "\n" + "     -Trademark: " + this.trademark + "\n" + "     -SD Size (GB): " + this.sdSize + "\n" + "     -Color: " + this.color + "\n" + "     -Is 5g?: " + this.is5G + "\n" + "     -Number of Cameras: " + this.cameraNumber + "\n" + "     -Price: " + this.price);
+        console.log("• 'The characteristics of the mobile " + this.name + " are:'" + "\n" + "\t■ Name: " + this.name + "\n" + "\t■ Model: " + this.model + "\n" 
+        + "\t■ Trademark: " + this.trademark + "\n" + "\t■ SD Size (GB): " + this.sdSize + "\n" + "\t■ Color: " + this.color + "\n" + "\t■ Is 5g?: " + this.is5G + "\n" 
+        + "\t■ Number of Cameras: " + this.cameraNumber + "\n" + "\t■ Price: " + this.price);
     } 
-
 }
-
-

@@ -61,8 +61,5 @@ miLocutorio = [Nokia3210, iPhone3G, SamsungGalaxy10];
 // Mostrar cada uno de los atributos de cada unos de los objetos del array creado en modo lista.
 for (let i=0; i <miLocutorio.length; i++)
 {
-    console.log ("* 'The characteristics of the mobile " + miLocutorio[i].getName() + " are:'" + "\n" + "     -Name: " + miLocutorio[i].getName() 
-    + "\n" + "     -Model: " + this.model + "\n" + "     -Trademark: " + this.trademark + "\n" + "     -SD Size (GB): " + this.sdSize + "\n" +
-     "     -Color: " + this.color + "\n" + "     -Is 5g?: " + this.is5G + "\n" + "     -Number of Cameras: " + this.cameraNumber + "\n" + 
-     "     -Price: " + this.price + "\n");
+    miLocutorio[i].printProperities();
 }
