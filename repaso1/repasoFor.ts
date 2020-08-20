@@ -59,7 +59,8 @@ function sumCharacters (parametro: string []): number
 console.log(sumCharacters(["hola", "adiós"]));
 
 
-// 9. Realizar una función que imprima por consola si el número introducido como parámetro es par o impar.
+//9. Realizar una función que imprima por consola si el número introducido como parámetro es par o impar.
+// (ESTÁ EN DOCUMENTO REPASOIF comentada pero la pongo aquí para poder llamarla en ejercicio 10)
 function evenOdd (number: number)
 {
     if (number % 2 == 0)
@@ -74,7 +75,6 @@ function evenOdd (number: number)
 }
 
 evenOdd(6);
-
 
 // 10. Utilizando las dos funciones anteriores indicar si es par o impar la suma de los caracteres de estos arrays:
 let firstArr: string [] = ["Casa", "Coche", "Ciudad", "Cesta"]; // 20
