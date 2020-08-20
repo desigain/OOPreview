@@ -160,19 +160,19 @@ function whatContinentAmI (parametro: string)
 whatContinentAmI("Australia");
 
 
-// 9. Realizar una función que imprima por consola si el número introducido como parámetro es par o impar.
-function evenOdd (number: number)
-{
-    if (number % 2 == 0)
-    {
-        console.log("El número introducido es par");
-    }
+// // 9. Realizar una función que imprima por consola si el número introducido como parámetro es par o impar.
+// function evenOdd (number: number)
+// {
+//     if (number % 2 == 0)
+//     {
+//         console.log("El número introducido es par");
+//     }
 
-    else 
-    {
-        console.log("El número introducido es impar");
-    }
-}
+//     else 
+//     {
+//         console.log("El número introducido es impar");
+//     }
+// }
 
-evenOdd(6);
+// evenOdd(6);
 
