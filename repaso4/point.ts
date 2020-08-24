@@ -43,7 +43,7 @@ class Point
     }
 
     public calcularDistancia (parametro: Point):number  //devuelve la distancia entre dos puntos
-    {
+    { 
         return Math.sqrt(Math.pow((this.x - parametro.x), 2) + (Math.pow((this.y - parametro.y), 2)));
     }
 
@@ -77,44 +77,20 @@ class Point
 
     public calcularMasCercano (parametro: Point[]): Point // devuelve una referencia al objeto del array más cercano al punto actual.
     {
+        let nearestPoint: Point = new Point (0,0);
+
+        let numAlto : number = 55478547847;
         for (let i =0; i< parametro.length; i++)
-        {
-            if (this.calcularDistancia(parametro[i]) < this.calcularDistancia(parametro.length[i]))
+        { 
+            if (this.calcularDistancia(parametro[i]) < numAlto)
             {
-                return parametro[i];
+                numAlto = this.calcularDistancia(parametro[i])
+                nearestPoint = parametro[i];
             }
-
-            else 
-            {
-                return parametro [i+1];
-            }
-
         }
-        //PLAN B
-        let closestPoint: Point = new Point (0,0);
-        for (let i =0; i< parametro.length; i++)
-        {
-            let arrDistancias: number [] = [];
-            arrDistancias.push(this.calcularDistancia(parametro[i]));
-
-            for (let j = 0; j<arrDistancias.length;j++)
-            if ([j+1] < [j])
-            {
-            }
-
-        }
-
+        return nearestPoint;
     }
+        
 }
 
 
-let miPunto = new Point (-1, 0);
-
-let p1 = new Point (4,6);
-let p2 = new Point (0, 4);
-let p3 = new Point (5, 8);
-let p4 = new Point (15, 38);
-let p5 = new Point (0, 1);
-let arraiPoints: Point [] = [p1, p2, p3];
-
-console.log(miPunto.calcularMasCercano([p1, p5, p2, p3, p4]));
